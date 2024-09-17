@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 75px;
+}
+
+
+a:hover{
+    opacity: 0.7;
+}
+
+img{
+    width: 400px;
+    margin-top: 4.5vh;
+}
+
+ion-icon {
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 28px;
+    margin: 35px;
+    transition: 0.3s;
+}
+
+
+ion-icon :hover{
+    opacity: 0.7;
+
+}
+
+
+input[type=text]{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    height: 40px;
+    border-radius: 10px;
+    background: #ececec;
+    border: transparent;
+    width: 390px;
+}
+
+.box-pesquisa{
+    text-align: center;  
+    display: flex;
+    justify-content: center;
+    margin: 180px;
+}
+
+.barra{
+    background-color:white;
+    border-top: rgb(6, 0, 34) solid 4px;
+    border-bottom: rgb(6, 0, 34) solid 4px;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.listaCatalogo{
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+
+.barra-catalogo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+}
+
+
+
+.txt{
+    text-align: center;
+}
+
+
+.imagem{
+    width:1200px;
+    height: 600px;
+}
+
+
+.wrapper-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.freteGratis{
+    display: flex;justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    height: 40px;
+    font-style: italic;
+
+}
+
+
+.txtprodutos{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: -80px;
+    line-height: 10px;
+}
+
+
+.produto{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.box-produtos{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.quadrado{
+    border-radius: 30px;
+    backdrop-filter: blur(9px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    margin: 50px;
+    cursor: pointer;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.txtPreco{
+    margin-top: 20px;
+}
+
+.produtoImg{
+    margin-top: 12px;
+    width: 210px;
+    height: 200px;
+}
+
+.txtProduto{
+    margin: 8px;
+}
+
+.estrela{
+    margin: 1px;
+}
+
+.linhatxt{
+    width: 100px;
+    height: 6px;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+    background-color: black;
+    position:absolute;
+}
+
+/*FINAL E-MAIL*/
+.final-email{   
+    margin-top: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(224, 224, 224, 0.678);
+    height: 300px;
+    flex-direction: column;
+}
+
+.box-pesquisa-final{
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.txt-final{
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+
+.txt-menor{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    color: rgb(58, 58, 58);
+}
+
+.final-email input{
+    background-color: rgb(255, 255, 255);
+}
+
+.box-final{
+    background-color: black;
+    height: 300px;
+}
+/*FINAL E-MAIL*/
+
+
+
+/*MEDIA QUERYS RESPONSIVAS*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        overflow-x:hidden;
+    }
+    .listaCatalogo{
+        display: none;
+    }
+
+    .barra{
+        width: 10v;
+    }
+
+    .logo{
+        margin: 100px;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    a{
+        color: black;
+        font-weight: 900;
+    }
+
+    .listaCatalogo{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        height: 92vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;        
+        transform: translateX(100%);
+    }
+
+    .listaCatalogo li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .listaCatalogo .active{
+        transform: translateX(0);
+    }
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px){
+    
+  .box-pesquisa{
+    margin-left: 360px;
+    padding-right: 130px;
+  }
+
+
+ion-icon {
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 28px;
+    margin: 45px;
+    transition: 0.3s;
+}
+
+}
+
+
+
+/*MEDIA QUERYS RESPONSIVAS*/
+
+
+
+/*FONTES*/
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+/*FONTES*/
